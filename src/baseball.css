@@ -1,0 +1,49 @@
+.container {
+  width: 300px;
+  height: 450px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #666;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.title > span {
+  position: relative;
+  top: 7px;
+  left: 10px;
+}
+
+.inputText {
+  width: 70%;
+  margin: 0;
+  box-shadow: none;
+  margin-right: 5%;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  font-size: 12px;
+}
+.submitBtn {
+  font-size: 12px;
+  width: 25%;
+  height: 30px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: white;
+  box-shadow: none;
+  border: none;
+}
+
+form {
+  margin-bottom: 20px;
+}
+.try,
+.number,
+.result {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.alert {
+  text-align: left;
+  color: red;
+}
