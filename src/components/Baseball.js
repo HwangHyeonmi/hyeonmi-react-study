@@ -2,19 +2,19 @@ import React, { useRef, useState } from 'react';
 import '../baseball.css'
 
 const getRandNum = ()=>{
-    let lotto = [];
+    let array = [];
     let i = 0;
     while (i < 4) {
     let n = Math.floor(Math.random() * 9) + 1;
     if (notSame(n)) {
-    lotto.push(n);
+        array.push(n);
     i++;
     }
     }
     function notSame (n) {
-    return lotto.every((e) => n !== e);
+    return array.every((e) => n !== e);
     }
-    return lotto;
+    return array;
 }
 
 
