@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import '../lotto.css'
 
@@ -8,14 +7,14 @@ const getRandNum = ()=>{
     let array = [];
     let i = 0;
     while (i < 7) {
-    let n = Math.floor(Math.random() * 45) + 1;
-    if (notSame(n)) {
-    array.push(n);
-    i++;
-    }
+        let n = Math.floor(Math.random() * 45) + 1;
+            if (notSame(n)) {
+                array.push(n);
+                i++;
+            }
     }
     function notSame (n) {
-    return array.every((e) => n !== e);
+        return array.every((e) => n !== e);
     }
     return array;
 }
